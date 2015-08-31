@@ -1,0 +1,15 @@
+create database Players;
+create table Player(
+id int primary key not null AUTO_INCREMENT,
+login_name nvarchar(50) not null,
+login_password nvarchar(100) not null,
+balance double not null,
+token nvarchar(100) not null
+);
+create table Player_profile(
+id int primary key not null AUTO_INCREMENT,
+first_name nvarchar(20) not null,
+last_name nvarchar(20) not null,
+fk_player int not null,
+foreign key(fk_player) references Player(id)
+);

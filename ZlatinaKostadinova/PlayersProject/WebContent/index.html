@@ -1,0 +1,45 @@
+<HTML>
+<TITLE>Login</TITLE>
+<BODY>
+	<FORM ACTION="http://localhost:8080/PlayersProject/HomeServlet"
+		METHOD=post>
+
+		<TABLE>
+			<TR>
+				<TD COLSPAN=2>
+					<P ALIGN=CENTER>
+						Welcome!<br> Please enter your User and<br> Password to log
+						in.
+				</TD>
+			</TR>
+
+			<TR>
+				<TD>
+					<P ALIGN=RIGHT>
+						<B>User:</B>
+				</TD>
+				<TD>
+					<P>
+						<INPUT TYPE=TEXT NAME="loginName" VALUE="" SIZE=15 required>
+				</TD>
+			</TR>
+
+			<TR>
+				<TD>
+					<P ALIGN=RIGHT>
+						<B>Password:</B>
+				</TD>
+				<TD>
+					<P>
+						<INPUT TYPE=PASSWORD NAME="loginPassword" VALUE="" SIZE=15 required>
+				</TD>
+			</TR>
+
+			<TR>
+				<TD COLSPAN=2><INPUT TYPE=SUBMIT VALUE="  OK  "></TD>
+			</TR>
+		</TABLE>
+	</FORM>
+	<a href="http://localhost:8080/PlayersProject/RegisterServlet">Registration</a>
+</BODY>
+</HTML>
